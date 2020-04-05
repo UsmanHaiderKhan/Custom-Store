@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/boostrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Custom Store</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Draw Your Kitchen Drawing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    </div>
+  </nav>
+  <!-- Side bar -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 pr-1">
+        <div id="sidenav" class="bg-light shadow-md">
+          <div class="wrapper">
+            <div class="menu">
+              <!-- Hood's -->
+              <fieldset id="hood">
+                <legend>Hoods</legend>
+                <img src="./assets/images/Appliances/14'hood.png" class="product_size" alt="" />
+                <img src="./assets/images/Appliances/15'hood.png" class="product_size" alt="" />
+              </fieldset>
+              <!-- GAllon -->
+              <fieldset id="gallon">
+                <legend>Gallon</legend>
+                <img src="./assets/images/Appliances/10'hood.png" class="product_size" alt="" />
+                <img src="./assets/images/Appliances/ansul3gallon.png" class="product_size" alt="" />
+                <img src="./assets/images/Appliances/ansul9gallon.png" class="product_size" alt="" />
+              </fieldset>
+
+              <!-- Burner's -->
+              <fieldset id="burner">
+                <legend>Burner</legend>
+                <img src="./assets/images/Appliances/2-burner-range.png" class="product_size" alt="" id="drag1" />
+                <img src="./assets/images/Appliances/4-burner-range.png" class="product_size" alt="" id="drag2" />
+                <img src="./assets/images/Appliances/4-burner-with-36-griddle.png" class="product_size" id="drag3" />
+                <img src="./assets/images/Appliances/8-burner.png" class="product_size" alt="" id="drag4" />
+              </fieldset>
+              <!-- fryer -->
+              <fieldset id="fryer">
+                <legend>Fryer</legend>
+                <img src="./assets/images/Appliances/double-fryer.png" class="product_size" alt="" />
+              </fieldset>
+              <!-- Unknow -->
+              <fieldset id="unknown">
+                <legend>Unknow</legend>
+                <img src="./assets/images/Appliances/unknown.png" class="product_size" alt="" />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 pl-1">
+        <div class="row">
+          <div class="col-md-3 pr-1">
+            <div class="border-left">
+              <img src="" class="gallon" alt="">
+            </div>
+          </div>
+          <div class="col-md-9 pl-1">
+            <div class="border-right">
+              <img src="" class="hoods" alt="">
+              <div class="appliences-setting">
+                <img src="" class="apl" id="apl-1" alt="">
+                <img src="" class="apl" id="apl-2" alt="">
+                <img src="" class="apl" id="apl-3" alt="">
+                <img src="" class="apl" id="apl-4" alt="">
+                <img src="" class="apl" id="apl-5" alt="">
+                <!-- <img src="" class="apl" id="apl-6" alt=""> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group float-right mt-3">
+          <button type="submit" class="btn btn-success">Save States</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    const totalWidth = document.write($(".border-right").css("width"));
+
+    if (totalWidth == 746) {
+      alert("you can't add more item in this HOOD ");
+    }
+    // $( function() {
+    //     $( "#draggable" ).draggable();
+    //   } );
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+</body>
+
+</html>
