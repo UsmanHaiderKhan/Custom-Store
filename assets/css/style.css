@@ -12,6 +12,13 @@ html {
 }
 
 /* ------------ Sidenav CSS ------------- */
+legend {
+  font-size: 12px !important;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 #sidenav {
   position: fixed;
   width: 350px;
@@ -30,16 +37,20 @@ html {
 
 .border-left {
   width: 100%;
-  padding: 10px;
-  height: 80vh;
-  border: 1px solid green;
+  height: 85vh;
+  margin-top: 33px;
+  border: 0px solid green;
 }
 
 .border-right {
   width: 100%;
-  height: 80vh;
-  padding: 10px;
-  border: 1px solid rgb(71, 71, 9);
+  height: 85vh;
+  margin-top: 10px;
+  border: 0px solid rgb(71, 71, 9);
+}
+
+.hoods-size {
+  width: 100%;
 }
 
 .product_size {
@@ -64,6 +75,25 @@ html {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  width: 746px;
+}
+
+
+#sidenav::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#sidenav::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#sidenav::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: lightgrey;
 }
 
 
