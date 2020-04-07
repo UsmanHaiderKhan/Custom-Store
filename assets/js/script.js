@@ -5,12 +5,12 @@ $(document).ready(function () {
   $('#hood .hoods-size').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var source = $(this).attr('src');
-      $(".hoods").attr('src', source);
+      $(".hoods").attr('src', "");
     } else {
       $(this).attr('data-click-state', 1);
-      var source = "";
+      var source = $(this).attr('src');
       $(".hoods").attr('src', source);
+
     }
   });
 
@@ -35,11 +35,10 @@ $(document).ready(function () {
   $('#gallon .product_size').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var source1 = $(this).attr('src');
-      $(".border-left").find('img').attr('src', source1);
+      $(".border-left").find('img').attr('src', "");
     } else {
       $(this).attr('data-click-state', 1);
-      var source1 = "";
+      var source1 = $(this).attr('src');
       $(".border-left").find('img').attr('src', source1);
     }
   });
@@ -52,11 +51,10 @@ $(document).ready(function () {
   $('#burner #drag1').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img = $(this).attr('src');
-      $("#apl-1").attr('src', get_img);
+      $("#apl-1").attr('src', "");
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img = "";
+      var get_img = $(this).attr('src');
       $("#apl-1").attr('src', get_img);
     }
   });
@@ -65,11 +63,10 @@ $(document).ready(function () {
   $('#burner #drag2').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img1 = $(this).attr('src');
-      $("#apl-2").attr('src', get_img1);
+      $("#apl-2").attr('src', "");
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img1 = "";
+      var get_img1 = $(this).attr('src');
       $("#apl-2").attr('src', get_img1);
     }
   });
@@ -78,11 +75,10 @@ $(document).ready(function () {
   $('#burner #drag3').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img2 = $(this).attr('src');
-      $("#apl-3").attr('src', get_img2);
+      $("#apl-3").attr('src', "");
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img2 = "";
+      var get_img2 = $(this).attr('src');
       $("#apl-3").attr('src', get_img2);
     }
   });
@@ -90,11 +86,11 @@ $(document).ready(function () {
   $('#burner #drag4').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img3 = $(this).attr('src');
-      $("#apl-4").attr('src', get_img3);
+      $("#apl-4").attr('src', "");
+
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img3 = "";
+      var get_img3 = $(this).attr('src');
       $("#apl-4").attr('src', get_img3);
     }
   });
@@ -103,23 +99,24 @@ $(document).ready(function () {
   $('#fryer .product_size').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img4 = $(this).attr('src');
-      $("#apl-5").attr('src', get_img4);
+      $("#apl-5").attr('src', "");
+
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img4 = "";
+      var get_img4 = $(this).attr('src');
       $("#apl-5").attr('src', get_img4);
+
     }
   });
 
   $('#unknown .product_size').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
       $(this).attr('data-click-state', 0);
-      var get_img4 = $(this).attr('src');
-      $("#apl-5").attr('src', get_img4);
+      $("#apl-5").attr('src', "");
+
     } else {
       $(this).attr('data-click-state', 1);
-      var get_img4 = "";
+      var get_img4 = $(this).attr('src');
       $("#apl-5").attr('src', get_img4);
     }
   });
