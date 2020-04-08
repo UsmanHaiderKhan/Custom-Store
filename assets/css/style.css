@@ -72,7 +72,9 @@ legend {
   height: 230px;
 
 }
-
+.display-none{
+  display: none;
+}
 /* Appliences Settings */
 .appliences-setting {
   display: flex;

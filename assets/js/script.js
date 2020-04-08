@@ -30,23 +30,35 @@ $(document).ready(function () {
   // }
   //  );
   var borderwidth = $(".appliences-setting").width();
-  var width_Re = 641;
+  // var width_Re = 641;
 
-  $('#gallon .product_size').on('click', function () {
-    if ($(this).attr('data-click-state') == 1) {
-      $(this).attr('data-click-state', 0);
-      $(".border-left").find('img').attr('src', "");
-    } else {
-      $(this).attr('data-click-state', 1);
-      var source1 = $(this).attr('src');
-      $(".border-left").find('img').attr('src', source1);
-    }
-  });
-
-  // $("#gallon .product_size").on('click', function () {
-  //   var source1 = $(this).attr('src');
-  //   $(".border-left").find('img').attr('src', source1);
+  // $('#gallon .product_size').on('click', function () {
+  //   if ($(this).attr('data-click-state') == 1) {
+  //     $(this).attr('data-click-state', 0);
+  //     $(".border-left").find('img').attr('src', "");
+  //   } else {
+  //     $(this).attr('data-click-state', 1);
+  //     var source1 = $(this).attr('src');
+  //     $(".border-left").find('img').attr('src', source1);
+  //   }
   // });
+
+  $("#gallon #c1 ").on('click', function () {
+    $("#gallon-1").addClass("d-block");
+    $("#gallon-2").removeClass("d-block");
+    $("#gallon-3").removeClass("d-block");
+
+  });
+  $("#gallon #c2 ").on('click', function () {
+    $("#gallon-2").addClass("d-block");
+    $("#gallon-1").removeClass("d-block");
+    $("#gallon-3").removeClass("d-block");
+  });
+  $("#gallon  #c3").on('click', function () {
+    $("#gallon-3").addClass("d-block");
+    $("#gallon-2").removeClass("d-block");
+    $("#gallon-1").removeClass("d-block");
+  });
 
   $('#burner #drag1').on('click', function () {
     if ($(this).attr('data-click-state') == 1) {
