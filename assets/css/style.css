@@ -79,8 +79,7 @@ legend {
 .appliences-setting {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
-  width: 746px;
+  margin-top: 50px;width: auto;
 }
 
 #apl-1{
